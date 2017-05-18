@@ -10,7 +10,7 @@ public class UILog : MonoBehaviour
     public float time = 2.0f;
     private void Start()
     {
-        text.text = "";
+        text.text = "Picked Up:" + "\n";
     }
 
     private void Update()
@@ -26,7 +26,7 @@ public class UILog : MonoBehaviour
 
     public void OnItemAction(ScriptableObjects.Item item)
     {
-        text.text = item.name + "\n";
+        text.text += item.name + "\n";
 
     }
 
