@@ -11,6 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe61ff5193193fc4a8ab45899a9e0ef9, type: 3}
   m_Name: Loot Table
   m_EditorClassIdentifier: 
-  Drops:
-  - item: {fileID: 11400000, guid: 818be24e0cc20f943b7ee6448ccaf4fe, type: 2}
-    chanceToDrop: 0.397
+  Drops: []
