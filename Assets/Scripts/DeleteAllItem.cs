@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CreateAssetMenu(fileName = "Remove Item", menuName = "Remove Item")]
-public class RemoveAllItem : ScriptableObject
+[CreateAssetMenu(fileName = "Delete Item", menuName = "Delete Item")]
+public class DeleteAllItem : ScriptableObject
 {
-	public void RemoveAllFromScreen()
+	public void DeleteAllFromScreen()
 	{
 		
 		foreach(GameObject g in GameObject.FindGameObjectsWithTag("Item"))
@@ -16,7 +16,7 @@ public class RemoveAllItem : ScriptableObject
 
 	}
 
-	public void RemoveAllFromBackpack()
+	public void DeleteAllFromBackpack()
 	{
 		
 	}
