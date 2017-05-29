@@ -18,7 +18,11 @@ public class DeleteAllItem : ScriptableObject
 
 	public void DeleteAllFromBackpack()
 	{
-		
+		BackPack b = GameObject.FindGameObjectWithTag ("Player").GetComponent<BackPack> ();
+		foreach (ScriptableObjects.Item i in b.Inventory) {
+			b.RemoveAllFromStash ();
+			GameObject.DestroyImmediate (i);
+		}
 	}
 
 
