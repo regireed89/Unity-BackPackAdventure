@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
 
 [CreateAssetMenu(fileName = "Delete Item", menuName = "Delete Item")]
 public class DeleteAllItem : ScriptableObject
@@ -13,7 +13,6 @@ public class DeleteAllItem : ScriptableObject
 		{
 			GameObject.DestroyImmediate (g);
 		}
-
 	}
 
 	public void DeleteAllFromBackpack()
