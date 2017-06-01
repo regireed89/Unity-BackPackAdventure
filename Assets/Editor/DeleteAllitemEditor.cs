@@ -13,6 +13,7 @@ public class DeleteAllitemEditor : Editor {
 			if (GUILayout.Button ("Delete From Scene"))
 				remove.DeleteAllFromScreen ();
 		}
+
 		if (Application.isPlaying == true) {
 			if (GUILayout.Button ("Delete From Backpack")) 
 				remove.DeleteAllFromBackpack ();
